@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 18px;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+/* ===============  
+  PC用スタイル
+  =============== */  
+  /* ヘッダー */
+  #header-outline {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 980px;
+  }
+  
+  #header-outline a {
+    text-decoration: none;
+    font-size: 34px;
+    font-weight: bold;
+  }
+  
+  h1 {
+    margin: 0 0 0 20px;
+    border: 1px solid #000000;
+    margin: 0 0 0 20px;
+    padding: 0 20px;
+    text-decoration: none;
+  }
+  
+  /* ナビゲーション */
+  #nav-pc ul {
+    display: flex;
+    padding-left: 0;
+  }
+  
+  #nav-pc li {
+    margin: 0 15px;
+    list-style: none;
+  }
+  
+  /* 各セクションの見出し */
+  h2 {
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    padding: 70px auto 40px auto;
+  }
+  
+  /* メインビジュアル */
+  #main-visual img{
+    width: 100%;
+    margin: auto 0;
+  }
+  
+  
+  /* About */
+  #about-outline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 980px;
+  }
+  
+  /* プロフィール写真  */
+  #about-outline img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+  }
+  
+  /* 名前 */
+  #about-outline h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  #about-profile {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Works */
+  #works-outline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 980px;
+  }
+  
+  .works-details {
+    margin: 0 10px;
+    padding-bottom: 80px;
+    width: 30%;
+    overflow: hidden;
+  }
+  
+  /* footer */
+  #copyright {
+    text-align: center;
+    padding: 10px auto;
+  }
+  
+  /* ===============  
+     SP用スタイル
+  =============== */
+  @media screen and (max-width: 767px) {
+    h1 {
+      font-size: 28px;
+    }
+    
+    h2 {
+      font-size: 28px;
+      padding: 20px 0;
+    }
+    
+    #nav-pc li {
+      font-size: 21px;
+      margin: 0 10px;
+    }
+    
+    .works-details {
+      width: 100%;
+      text-align: center; 
+      padding-bottom: 45px;
+    }
+}
