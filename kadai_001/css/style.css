@@ -19,7 +19,6 @@ body {
   #header-outline {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     align-items: center;
     margin: 20px auto;
     max-width: 980px;
