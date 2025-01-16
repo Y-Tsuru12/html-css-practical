@@ -5,10 +5,10 @@
 }
 
 body {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 18px;
   padding: 0px;
   margin: 0px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 18px;
 }
 
 
@@ -16,15 +16,16 @@ body {
   PC用スタイル
   =============== */  
   /* ヘッダー */
-  #header-outline {
+  .header-outline {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 20px auto;
     max-width: 980px;
   }
   
-  #header-outline a {
+  .header-outline a {
     text-decoration: none;
     font-size: 34px;
     font-weight: bold;
@@ -35,20 +36,28 @@ body {
     border: 1px solid #000000;
     margin: 0 0 0 20px;
     padding: 0 20px;
+  }
+
+  /* MyProfile */
+  .header-title {
     text-decoration: none;
   }
   
   /* ナビゲーション */
-  #nav-pc ul {
+  .nav-pc ul {
     display: flex;
     padding-left: 0;
   }
   
-  #nav-pc li {
+  .nav-pc li {
     margin: 0 15px;
     list-style: none;
   }
-  
+
+  .nav-pc a {
+    font-size: 34px;
+  }
+ 
   /* 各セクションの見出し */
   h2 {
     font-size: 34px;
@@ -59,14 +68,14 @@ body {
   }
   
   /* メインビジュアル */
-  #main-visual img{
+  .main-visual img{
     width: 100%;
     margin: auto 0;
   }
   
   
   /* About */
-  #about-outline {
+  .about-outline {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -77,25 +86,25 @@ body {
   }
   
   /* プロフィール写真  */
-  #about-outline img {
+  .about-outline img {
     width: 280px;
     height: 280px;
     border-radius: 50%;
   }
   
   /* 名前 */
-  #about-outline h3 {
+  .about-outline h3 {
     font-size: 24px;
     font-weight: bold;
   }
   
-  #about-profile {
+  .about-profile {
     margin: 0 auto;
     padding: 0 20px;
   }
   
   /* Works */
-  #works-outline {
+  .works-outline {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -107,7 +116,12 @@ body {
     margin: 0 10px;
     padding-bottom: 80px;
     width: 30%;
-    overflow: hidden;
+  }
+
+  .works-details img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
   
   /* footer */
@@ -129,9 +143,12 @@ body {
       padding: 20px 0;
     }
     
-    #nav-pc li {
-      font-size: 21px;
+    nav li {
       margin: 0 10px;
+    }
+
+    nav a {
+      font-size: 18px;
     }
     
     .works-details {
